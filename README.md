@@ -12,7 +12,7 @@ cp src/task ~/bin/
 
 - Add a new task, due in four hours
 ```
-task add Build a new foo project:this status:pending due:+4h
+task add Build a new foo project:this due:+4h
 ```
 
 - Make task /foo/ searches case-insensitive...
@@ -22,7 +22,7 @@ echo 'search.case.sensitive=no' >> ~/.taskrc
 
 - Add a new task that depends on the first one, due at end of month
 ```
-task add Build a new bar depends:1 project:this status:pending due:eom
+task add Build a new bar depends:1 project:this due:eom
 ```
 
 - List the tasks (default in ~/.task/pending.data): `task`
